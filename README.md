@@ -1,0 +1,1 @@
+Purpose of Repo:  I am learning Terraform specifically for use with Microsoft Azure.  I have a database background, so many of the scripts in this repo will be database focused.
