@@ -10,7 +10,15 @@ provider "azurerm" {
   features {}
 }
 
+variable "AzureLocation" {
+  type        = string
+}
+
+variable "RGName" {
+  type        = string
+}
+
 resource "azurerm_resource_group" "dep" {
-  name     = "DepsEphemeralResources"
-  location = "East US"
+  name     = var.RGName
+  location = var.AzureLocation
 }
