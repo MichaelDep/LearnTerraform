@@ -1,7 +1,3 @@
-# az
-# az login
-# az account set --subscription "Dep's MSDN"
-# az account show
 
 
 provider "azurerm" {
