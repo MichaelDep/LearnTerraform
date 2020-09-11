@@ -18,6 +18,26 @@ variable "RGName" {
   type        = string
 }
 
+variable "AdminLogin" {
+  type        = string
+}
+
+variable "AdminPassword" {
+  type        = string
+}
+
+variable "DatabaseHost" {
+  type        = string
+}
+
+variable "DatabaseName" {
+  type        = string
+}
+
+variable "ServiceObjective" {
+    type    = string
+}
+
 resource "azurerm_resource_group" "dep" {
   name     = var.RGName
   location = var.AzureLocation

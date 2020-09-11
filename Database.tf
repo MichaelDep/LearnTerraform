@@ -5,14 +5,6 @@ provider "azurerm" {
   features {}
 }
 
-variable "DatabaseName" {
-  type        = string
-}
-
-variable "ServiceObjective" {
-    type    = string
-}
-
 resource "azurerm_sql_database" "dep" {
   name                = var.DatabaseName
   resource_group_name = azurerm_resource_group.dep.name

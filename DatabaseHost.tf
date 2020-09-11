@@ -5,18 +5,6 @@ provider "azurerm" {
   features {}
 }
 
-variable "AdminLogin" {
-  type        = string
-}
-
-variable "AdminPassword" {
-  type        = string
-}
-
-variable "DatabaseHost" {
-  type        = string
-}
-
 resource "azurerm_sql_server" "dep" {
   name                         = var.DatabaseHost
   resource_group_name          = azurerm_resource_group.dep.name
